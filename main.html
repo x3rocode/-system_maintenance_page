@@ -1,0 +1,430 @@
+<!DOCTYPE>
+<html lang="ko">
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,  initial-scale=1" user-scalable=no>
+    <title>eSteel4U 서비스 일시 중단 안내</title>
+    
+    <!--<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_axz3dsgw.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+-->
+
+<!--#00439A-->
+    <style>
+       
+        @font-face {
+            font-family: 'lineRg';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Rg.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'lineBd';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+            font-weight: 700;
+            font-style: bold;
+        }
+        @font-face {
+            font-family: 'cafeRg';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        * {
+            font-family: 'lineRg';
+            font-weight: 100;
+        }
+
+        html,
+        body {
+            margin: 0;
+            position: absolute;
+            user-select: none;
+            background-color: #F2F2F2;
+        }
+
+
+        .wrap {
+            width: 100vw;
+            height: 100vh;
+        }
+
+
+        .top {
+            width: 100%;
+            height: 30%;
+            overflow: hidden;
+            margin: 0 auto;
+            background-image: url(./img/top_img.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+        }
+        .top > .top_content {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            padding-left: 10em;
+        }
+        .top > .top_content > .top-title > .top-title-1 {
+            font-size : 1.8em;
+        }
+        .top > .top_content > .top-title > .top-title-2 {
+            font-size: 3.7em; 
+            font-family: 'lineBd';
+        }
+        .top > .top_content > .top-title{
+            text-align: left;
+            margin: 0 auto;
+            padding-top: 2em;
+        }
+        .top >.logo {
+            position: absolute;
+            height: 2.8em;
+            padding: 3em;
+        }
+        .top > .top_content > .top-title >  span {
+            color:#F2F2F2;
+            text-shadow: 0px 5px 6px  rgb(0, 0, 0, 0.65);
+            display: block;
+        }
+        .top > .top_content > .lottie_box {
+            width: 14em;
+            padding-top: 2em;
+        }
+        .content > div > .lottie_box_t {
+            display: none;
+        }
+        .top > .top_content > .lottie_box_p {
+            display: none;
+        }
+
+
+
+        .content {
+            display: flex;
+            align-items: center;
+            margin-top: 3em;
+        }
+        .content > div {
+            text-align: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .content > div > .work_time {
+            position: relative;
+            margin: 3em 1.5em 4.5em 1.5em;
+        }
+        .content > div > .work_time > .title_box {
+            position: absolute;
+            border-radius: 36px;
+            background-color: #014193;
+            top: -20%;
+            padding: 1em 2em 1em 2em;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            
+        }
+        .content > div > .work_time > .date_box {
+            background-color: white;
+            width: fit-content;
+            height: fit-content;
+                          
+            margin: 0 auto;
+            padding: 4em 5em 2.5em 5em;
+            border-radius: 10px;
+            box-shadow: 0px 20px 45px 0px rgb(182, 182, 182, 0.65);
+        }
+        .content > div > .work_time > .date_box > span {
+            font-family: 'cafeRg';
+            color: #014193;
+            font-size: 1.7em;
+        }
+        .content > div > .work_time > .title_box > span {
+            font-family: 'cafeRg';
+            color: white;
+            font-size: 1.7em;
+        }
+        .content > div > span {
+            font-family: 'lineRg';
+            font-size: 1.7em;
+        }
+        .content > div > #content_bold_txt {
+            font-family: 'lineBd'; 
+            font-size: 1.8em;
+        }
+        .content > div > .bt_logo {
+            display: none;
+        }
+
+    
+        @media (max-width: 1023px) {
+            html,
+            body {
+                margin: 0;
+                position: relative;
+            }
+            .wrap {
+                width: auto;
+                height: auto;
+            }
+        
+            .content {
+                display: block;
+                align-items: center;
+                margin-top: 3em;
+                
+            }
+            
+            
+            .top {
+                height: 20%;
+            }
+            .top >.logo {
+                position: absolute;
+                height: 1.5em;
+                padding: 2em;
+            }
+            .top > .top_content {
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                padding-left: 0em;
+            }
+            .top > .top_content > .top-title{
+                text-align: center;
+                margin: 0 auto;
+                padding-top: 0em;
+            }
+            .top > .top_content > .top-title > .top-title-1 {
+                font-size : 1.5em;
+            }
+            .top > .top_content > .top-title > .top-title-2 {
+                font-size: 3em; 
+                font-family: 'lineBd';
+            }
+            .top > .top_content > .lottie_box {
+                display: none;
+            }
+            .top > .top_content > .lottie_box_p {
+                display: none;
+            }
+            .content > div > .work_time {
+                position: relative;
+                margin: 4.5em 1.5em 5em 1.5em;
+            }
+            .content > div > .lottie_box_t {
+                display: block;
+                margin: 0 auto;
+                width: 15em;
+                padding-bottom: 1em;
+                height: fit-content;
+            }
+
+            .content > div {
+                margin: 3em;
+                
+            }
+
+            .content > div > span {
+                font-family: 'lineRg';
+                font-size: 1.9em;
+            }
+
+            .content > div > #content_bold_txt {
+                font-family: 'lineBd'; 
+                font-size: 2em;
+            }
+
+            .content > div > .bt_logo {
+                display: inline;
+                width: 6em;
+                padding:3em 0em 1em 0em;
+            }
+
+        }
+
+        
+        @media (max-width: 715px) {
+            
+            html,
+            body {
+                margin: 0;
+                position: relative;
+                background-image: url(./img/bg_img.png);
+            
+            }
+            .wrap {
+                width: auto;
+                height: auto;
+          
+            }
+            span {
+                color: white;
+                word-wrap: break-word;
+            }
+
+            .content {
+                display: block;
+                align-items: center;
+            }
+            .top >.logo {
+                position: relative;
+                height: 1.5em;
+                padding: 2em 0em 0em 2em;
+            }
+
+            .top {
+                width: 100%;
+                height: auto;
+                overflow: visible;
+                background-image: none;
+                align-items: center;
+                display: block;
+            }
+            .top > .top_content {
+                display: block;
+            }
+            .top > .top_content > .top-title{
+                text-align: center;
+                margin: 0 auto;
+                padding-top: 1em 3em 0em 3em;
+            }
+            .top > .top_content > .lottie_box_p {
+                display: block;
+                margin: 0 auto;
+                width: 13em;
+                padding-bottom: 1em;
+                height: fit-content;
+            }
+
+            .top > .top_content > .lottie_box {
+                display: none;
+            }
+            .content > div > .lottie_box_t {
+                display: none;
+            }
+
+            .top > .top_content > .top-title > .top-title-1 {
+                display: none;
+            }
+            .top > .top_content > .top-title > .top-title-2 {
+                font-size: 2em;
+            }
+
+            .content > div {
+                margin: 3em;
+                
+            }
+            .content > div > span {
+                text-shadow: 0px 5px 6px  rgb(0, 0, 0, 0.65);
+                font-size: 1em;
+                align-items: center;
+            }
+            .content > div > #content_bold_txt {
+                font-family: 'lineBd'; 
+                font-size: 1em;
+            }
+
+            .content > div > .work_time {
+             
+                margin: 3em 1em 4.5em 1em;
+            }
+            .content > div > .work_time > .title_box {
+                position: absolute;
+                border-radius: 36px;
+                background-color: #5688C4;
+                top: -20%;
+                padding: 0.5em 1em 0.5em 1em;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                
+            }
+           
+            .content > div > .work_time > .date_box {
+                
+                background-color: white;
+                padding: 2em 1em 1em 1em;
+                border-radius: 10px;
+                box-shadow: 0px 20px 45px 0px rgb(0, 0, 0, 0.45);
+      
+            }
+            .content > div > .work_time > .date_box > span {
+                font-family: 'cafeRg';
+                color: #014193;
+                font-size: 1em;
+            }
+            .content > div > .work_time > .title_box > span {
+                font-family: 'cafeRg';
+                color: white;
+                font-size: 1em;
+            }
+            .content > div > .bt_logo {
+                display: inline;
+                width: 6em;
+                padding:3em 0em 0em 0em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="top">
+            <img class="logo" src="./img/img-header-logo.svg">
+            <div class="top_content">
+                <div class="lottie_box_p">
+                    <lottie-player class="lottie" src="https://assets8.lottiefiles.com/packages/lf20_AQcLsD.json"  background="transparent"  speed="0.3" loop  autoplay></lottie-player>
+                </div>
+                <div class="top-title">       
+                    <span class="top-title-1" >시스템 개선 작업으로 인한</span>
+                    <span class="top-title-2" >서비스 일시 중단 안내</span>
+                </div>
+                <div class="lottie_box">
+                    <lottie-player class="lottie" src="https://assets8.lottiefiles.com/packages/lf20_AQcLsD.json"  background="transparent"  speed="0.3" loop  autoplay></lottie-player>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div>
+                <div class="lottie_box_t">
+                    <lottie-player class="lottie" src="https://assets8.lottiefiles.com/packages/lf20_AQcLsD.json"  background="transparent"  speed="0.3" loop  autoplay></lottie-player>
+                </div>
+                <span>
+                    안정적인 서비스를 제공하기 위하여 <br> 
+                </span>
+                <span id="content_bold_txt">시스템 개선 작업</span>
+                <span>
+                    이 진행중입니다. <br>
+                    작업시간 동안
+                </span>
+                <span  id="content_bold_txt">
+                    시스템 운영이 잠시 중단
+                </span>
+                <span>
+                    되오니,
+                    이점 양해 부탁드립니다.
+                </span>
+                <div class="work_time">
+                    <div class="title_box">
+                        <span>작업 시간</span>
+                    </div>
+                    <div class="date_box">
+                        <span>
+                            2023년 2월 7일(화) 18:30 ~ 20:30
+                        </span>
+                    </div>
+                </div>
+                <span>
+                    더 나은 서비스로 곧 찾아뵙겠습니다.<br>
+                    감사합니다.<br>
+                </span>
+                <img class="bt_logo" src="./img/bt_logo.png">
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
